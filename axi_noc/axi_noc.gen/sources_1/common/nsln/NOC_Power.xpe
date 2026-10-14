@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<POWERDATA data="NOC Compiler" dataVersion="2019.1.0">
+<NOC_ROUTES>
+<CLK clk_freq ="1000" used_clk_buffers ="0" total_clk_buffers ="0" dfx_usage ="FLAT"></CLK>
+<PATH type ="Read" name ="M01_AXI_nsu/S00_AXI_nmu" master_name="axi_noc_0/inst/S00_AXI_nmu" master_type="PL_NMU" slave_name="axi_noc_0/inst/M01_AXI_nsu" slave_type="PL_NSU" bandwidth ="500" read_transaction_size="16">
+<CHANNEL source_port="NOC_NSU512_X3Y4/resp" sink_port="NOC_NPS_VNOC_X3Y8/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y8/port1_out" sink_port="NOC_NPS_VNOC_X3Y9/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y9/port3_out" sink_port="NOC_NMU512_X3Y4/resp_in" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Write" name ="M01_AXI_nsu/S00_AXI_nmu" master_name="axi_noc_0/inst/S00_AXI_nmu" master_type="PL_NMU" slave_name="axi_noc_0/inst/M01_AXI_nsu" slave_type="PL_NSU" bandwidth ="1000" write_transaction_size="16">
+<CHANNEL source_port="NOC_NMU512_X3Y4/req_out" sink_port="NOC_NPS_VNOC_X3Y9/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y9/port1_out" sink_port="NOC_NPS_VNOC_X3Y8/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y8/port3_out" sink_port="NOC_NSU512_X3Y4/req" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Read" name ="M00_AXI_nsu/S00_AXI_nmu" master_name="axi_noc_0/inst/S00_AXI_nmu" master_type="PL_NMU" slave_name="axi_noc_0/inst/M00_AXI_nsu" slave_type="PL_NSU" bandwidth ="1720" read_transaction_size="16">
+<CHANNEL source_port="NOC_NSU512_X3Y5/resp" sink_port="NOC_NPS_VNOC_X3Y10/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y10/port1_out" sink_port="NOC_NPS_VNOC_X3Y11/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y11/port2_out" sink_port="NOC_NPS_VNOC_X3Y9/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y9/port3_out" sink_port="NOC_NMU512_X3Y4/resp_in" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Write" name ="M00_AXI_nsu/S00_AXI_nmu" master_name="axi_noc_0/inst/S00_AXI_nmu" master_type="PL_NMU" slave_name="axi_noc_0/inst/M00_AXI_nsu" slave_type="PL_NSU" bandwidth ="3440" write_transaction_size="16">
+<CHANNEL source_port="NOC_NMU512_X3Y4/req_out" sink_port="NOC_NPS_VNOC_X3Y9/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y9/port0_out" sink_port="NOC_NPS_VNOC_X3Y11/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y11/port1_out" sink_port="NOC_NPS_VNOC_X3Y10/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y10/port3_out" sink_port="NOC_NSU512_X3Y5/req" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Read" name ="M01_AXI_nsu/S01_AXI_nmu" master_name="axi_noc_0/inst/S01_AXI_nmu" master_type="PL_NMU" slave_name="axi_noc_0/inst/M01_AXI_nsu" slave_type="PL_NSU" bandwidth ="500" read_transaction_size="16">
+<CHANNEL source_port="NOC_NSU512_X3Y4/resp" sink_port="NOC_NPS_VNOC_X3Y8/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y8/port0_out" sink_port="NOC_NPS_VNOC_X3Y6/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y6/port1_out" sink_port="NOC_NPS_VNOC_X3Y7/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y7/port3_out" sink_port="NOC_NMU512_X3Y3/resp_in" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Write" name ="M01_AXI_nsu/S01_AXI_nmu" master_name="axi_noc_0/inst/S01_AXI_nmu" master_type="PL_NMU" slave_name="axi_noc_0/inst/M01_AXI_nsu" slave_type="PL_NSU" bandwidth ="1000" write_transaction_size="16">
+<CHANNEL source_port="NOC_NMU512_X3Y3/req_out" sink_port="NOC_NPS_VNOC_X3Y7/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y7/port1_out" sink_port="NOC_NPS_VNOC_X3Y6/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y6/port2_out" sink_port="NOC_NPS_VNOC_X3Y8/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y8/port3_out" sink_port="NOC_NSU512_X3Y4/req" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Read" name ="M00_AXI_nsu/S01_AXI_nmu" master_name="axi_noc_0/inst/S01_AXI_nmu" master_type="PL_NMU" slave_name="axi_noc_0/inst/M00_AXI_nsu" slave_type="PL_NSU" bandwidth ="500" read_transaction_size="16">
+<CHANNEL source_port="NOC_NSU512_X3Y5/resp" sink_port="NOC_NPS_VNOC_X3Y10/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y10/port1_out" sink_port="NOC_NPS_VNOC_X3Y11/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y11/port2_out" sink_port="NOC_NPS_VNOC_X3Y9/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y9/port2_out" sink_port="NOC_NPS_VNOC_X3Y7/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y7/port3_out" sink_port="NOC_NMU512_X3Y3/resp_in" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Write" name ="M00_AXI_nsu/S01_AXI_nmu" master_name="axi_noc_0/inst/S01_AXI_nmu" master_type="PL_NMU" slave_name="axi_noc_0/inst/M00_AXI_nsu" slave_type="PL_NSU" bandwidth ="1000" write_transaction_size="16">
+<CHANNEL source_port="NOC_NMU512_X3Y3/req_out" sink_port="NOC_NPS_VNOC_X3Y7/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y7/port1_out" sink_port="NOC_NPS_VNOC_X3Y6/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y6/port2_out" sink_port="NOC_NPS_VNOC_X3Y8/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y8/port2_out" sink_port="NOC_NPS_VNOC_X3Y10/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y10/port3_out" sink_port="NOC_NSU512_X3Y5/req" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Read" name ="M01_AXI_nsu/S02_AXI_nmu" master_name="axi_noc_0/inst/S02_AXI_nmu" master_type="PL_NMU" slave_name="axi_noc_0/inst/M01_AXI_nsu" slave_type="PL_NSU" bandwidth ="500" read_transaction_size="16">
+<CHANNEL source_port="NOC_NSU512_X3Y4/resp" sink_port="NOC_NPS_VNOC_X3Y8/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y8/port1_out" sink_port="NOC_NPS_VNOC_X3Y9/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y9/port0_out" sink_port="NOC_NPS_VNOC_X3Y11/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y11/port3_out" sink_port="NOC_NMU512_X3Y5/resp_in" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Write" name ="M01_AXI_nsu/S02_AXI_nmu" master_name="axi_noc_0/inst/S02_AXI_nmu" master_type="PL_NMU" slave_name="axi_noc_0/inst/M01_AXI_nsu" slave_type="PL_NSU" bandwidth ="1000" write_transaction_size="16">
+<CHANNEL source_port="NOC_NMU512_X3Y5/req_out" sink_port="NOC_NPS_VNOC_X3Y11/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y11/port1_out" sink_port="NOC_NPS_VNOC_X3Y10/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y10/port0_out" sink_port="NOC_NPS_VNOC_X3Y8/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y8/port3_out" sink_port="NOC_NSU512_X3Y4/req" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Read" name ="M00_AXI_nsu/S02_AXI_nmu" master_name="axi_noc_0/inst/S02_AXI_nmu" master_type="PL_NMU" slave_name="axi_noc_0/inst/M00_AXI_nsu" slave_type="PL_NSU" bandwidth ="500" read_transaction_size="16">
+<CHANNEL source_port="NOC_NSU512_X3Y5/resp" sink_port="NOC_NPS_VNOC_X3Y10/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y10/port1_out" sink_port="NOC_NPS_VNOC_X3Y11/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y11/port3_out" sink_port="NOC_NMU512_X3Y5/resp_in" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Write" name ="M00_AXI_nsu/S02_AXI_nmu" master_name="axi_noc_0/inst/S02_AXI_nmu" master_type="PL_NMU" slave_name="axi_noc_0/inst/M00_AXI_nsu" slave_type="PL_NSU" bandwidth ="1000" write_transaction_size="16">
+<CHANNEL source_port="NOC_NMU512_X3Y5/req_out" sink_port="NOC_NPS_VNOC_X3Y11/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y11/port1_out" sink_port="NOC_NPS_VNOC_X3Y10/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y10/port3_out" sink_port="NOC_NSU512_X3Y5/req" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Read" name ="M01_AXI_nsu/S03_AXI_nmu" master_name="axi_noc_0/inst/S03_AXI_nmu" master_type="PL_NMU" slave_name="axi_noc_0/inst/M01_AXI_nsu" slave_type="PL_NSU" bandwidth ="500" read_transaction_size="16">
+<CHANNEL source_port="NOC_NSU512_X3Y4/resp" sink_port="NOC_NPS_VNOC_X3Y8/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y8/port2_out" sink_port="NOC_NPS_VNOC_X3Y10/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y10/port2_out" sink_port="NOC_NPS_VNOC_X3Y12/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y12/port1_out" sink_port="NOC_NPS_VNOC_X3Y13/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y13/port3_out" sink_port="NOC_NMU512_X3Y6/resp_in" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Write" name ="M01_AXI_nsu/S03_AXI_nmu" master_name="axi_noc_0/inst/S03_AXI_nmu" master_type="PL_NMU" slave_name="axi_noc_0/inst/M01_AXI_nsu" slave_type="PL_NSU" bandwidth ="1000" write_transaction_size="16">
+<CHANNEL source_port="NOC_NMU512_X3Y6/req_out" sink_port="NOC_NPS_VNOC_X3Y13/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y13/port2_out" sink_port="NOC_NPS_VNOC_X3Y11/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y11/port2_out" sink_port="NOC_NPS_VNOC_X3Y9/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y9/port1_out" sink_port="NOC_NPS_VNOC_X3Y8/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y8/port3_out" sink_port="NOC_NSU512_X3Y4/req" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Read" name ="M00_AXI_nsu/S03_AXI_nmu" master_name="axi_noc_0/inst/S03_AXI_nmu" master_type="PL_NMU" slave_name="axi_noc_0/inst/M00_AXI_nsu" slave_type="PL_NSU" bandwidth ="500" read_transaction_size="16">
+<CHANNEL source_port="NOC_NSU512_X3Y5/resp" sink_port="NOC_NPS_VNOC_X3Y10/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y10/port2_out" sink_port="NOC_NPS_VNOC_X3Y12/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y12/port1_out" sink_port="NOC_NPS_VNOC_X3Y13/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y13/port3_out" sink_port="NOC_NMU512_X3Y6/resp_in" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Write" name ="M00_AXI_nsu/S03_AXI_nmu" master_name="axi_noc_0/inst/S03_AXI_nmu" master_type="PL_NMU" slave_name="axi_noc_0/inst/M00_AXI_nsu" slave_type="PL_NSU" bandwidth ="1000" write_transaction_size="16">
+<CHANNEL source_port="NOC_NMU512_X3Y6/req_out" sink_port="NOC_NPS_VNOC_X3Y13/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y13/port1_out" sink_port="NOC_NPS_VNOC_X3Y12/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y12/port0_out" sink_port="NOC_NPS_VNOC_X3Y10/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X3Y10/port3_out" sink_port="NOC_NSU512_X3Y5/req" length="1.5"></CHANNEL>
+</PATH>
+</NOC_ROUTES>
+<BLOCKTYPE name="HMC">
+</BLOCKTYPE>
+<BLOCKTYPE name="HBM2E">
+</BLOCKTYPE>
+</POWERDATA>
